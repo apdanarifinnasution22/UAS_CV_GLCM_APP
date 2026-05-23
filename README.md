@@ -1,88 +1,137 @@
-# OVO Sentiment Analysis
+# 🧠 GLCM Object Recognition App
 
-## 📌 Overview
-This project is a **Sentiment Analysis** model built using **Deep Learning and NLP** to classify customer reviews of the **OVO digital payment application** into positive or negative sentiment.
+Aplikasi berbasis **Computer Vision** menggunakan **Python**, **Streamlit**, metode **GLCM (Gray Level Co-occurrence Matrix)**, dan algoritma **Decision Tree** untuk melakukan klasifikasi objek berdasarkan tekstur gambar.
 
----
-
-## 🚀 Features
-- Text preprocessing
-- Sentiment classification
-- Model training & evaluation
-- Accuracy and loss visualization
-- Predict sentiment from new text
-- Save trained model
+Project ini dibuat sebagai **Project Akhir / UAS Computer Vision**.
 
 ---
 
-## 📂 Dataset
-Dataset contains OVO user reviews with sentiment labels:
-- Positive
-- Negative
+# ✨ Fitur Utama
 
-Preprocessing includes:
-- Lowercasing
-- Tokenization
-- Stopword removal
-- Padding
-- Train-test split
-
----
-
-## 🧠 Model
-Built using **Sequential Deep Learning Model** with:
-- Embedding Layer
-- LSTM / Dense Layer
-- Dropout
-- Sigmoid Output
-
-**Optimizer:** Adam  
-**Loss:** Binary Crossentropy  
-**Metric:** Accuracy
+* ✅ Klasifikasi objek otomatis
+* ✅ Ekstraksi fitur GLCM
+* ✅ Decision Tree Classification
+* ✅ Confidence Score
+* ✅ Grafik fitur GLCM
+* ✅ Compare 2 Images
+* ✅ Riwayat prediksi
+* ✅ Export hasil ke CSV/Excel
 
 ---
 
-## 🛠️ Technologies
-- Python
-- TensorFlow / Keras
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- NLTK
+# 🗂️ Kategori Dataset
+
+* 🍎 Buah
+* 🥕 Sayur
+* 🧵 Kain
+* 🪙 Logam
+* 🎋 Bambu
 
 ---
 
-## 📊 Workflow
-1. Load dataset  
-2. Clean & preprocess text  
-3. Tokenization & padding  
-4. Train-test split  
-5. Build model  
-6. Train & evaluate  
-7. Predict sentiment  
-8. Save model  
+# 🛠️ Teknologi
+
+* Python
+* Streamlit
+* OpenCV
+* Scikit-Learn
+* NumPy
+* Pandas
+* Matplotlib
 
 ---
 
-## 📁 Project Structure
+# 📂 Struktur Project
+
 ```bash
-OVO-Sentiment-Analysis/
-│── dataset/
-│── notebook.ipynb
-│── model.h5
-│── tokenizer.pkl
-│── requirements.txt
-│── README.md
+GLCM_Object_Recognition/
+│
+├── app.py
+├── glcm_feature.py
+├── train_model.py
+├── requirements.txt
+├── dataset/
+└── hasil_klasifikasi.csv
 ```
 
 ---
 
-## 🎯 Result
-This project successfully analyzes customer sentiment from OVO reviews using Deep Learning and NLP with good classification performance.
+# ⚙️ Cara Menjalankan
+
+## Install Dependency
+
+```bash
+pip install -r requirements.txt
+```
+
+## Jalankan Aplikasi
+
+```bash
+streamlit run app.py
+```
 
 ---
 
-## 👨‍💻 Author
-**Apdan Arifin**  
-Informatics Engineering Student
+# 🧠 Metode yang Digunakan
+
+## GLCM
+
+Ekstraksi fitur tekstur:
+
+* Contrast
+* Correlation
+* Energy
+* Homogeneity
+
+## Decision Tree
+
+Digunakan untuk klasifikasi objek berdasarkan fitur GLCM.
+
+---
+
+# 📊 Alur Sistem
+
+```text
+Input Gambar
+     ↓
+Preprocessing
+     ↓
+Ekstraksi Fitur GLCM
+     ↓
+Decision Tree
+     ↓
+Hasil Prediksi
+```
+
+---
+
+# 📈 Hasil
+
+Aplikasi mampu melakukan klasifikasi objek dengan baik berdasarkan tekstur gambar dan menampilkan confidence score hasil prediksi.
+
+---
+
+# 👨‍💻 Author
+
+**Apdan Arifin**
+Teknik Informatika
+Project UAS Computer Vision
+
+---
+
+# 📚 Referensi
+
+* OpenCV Documentation
+* Streamlit Documentation
+* Scikit-Learn Documentation
+* Gonzalez & Woods - Digital Image Processing
+
+---
+
+# ⭐ Support
+
+Jika project ini bermanfaat:
+
+* ⭐ Star repository
+* 🍴 Fork repository
+* 📢 Share project
